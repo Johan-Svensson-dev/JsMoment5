@@ -22,7 +22,9 @@ function decClick() {
 
 function hover(e) {
     let name = e.target;
-    name.style.backgroundColor = "grey";
+    if (e.target.tagName === 'LI') {
+        e.target.style.backgroundColor = "grey";
+    }
 
 }
 

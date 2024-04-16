@@ -43,7 +43,7 @@ function hoverLeave(e) {
 
 function addNameToList(){
     let newname = nameInput.value;
-    if (newname) {
+    if (newname) { //kollar om man skrivit in något
         let newLi = document.createElement("li");
         newLi.textContent = newname;
         nameList.appendChild(newLi)
